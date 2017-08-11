@@ -1,0 +1,35 @@
+{
+  "name": "Joe the annoying friend",
+  "version": "1.0",
+  "manifest_version": 2,
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+    "content_scripts": [
+    {
+      "matches": ["*://www.facebook.com/*"],
+      "js": ["contentscript.js"]
+    }
+  ],
+
+
+  "page_action" :
+  {
+    "default_icon" : "off.png",
+    "default_title": "icon"
+    // "default_popup": "popup.html"
+  },
+  
+"icons": {
+   "19": "on.png",
+   "19": "off.png"
+ },
+
+  "permissions" : [
+    "declarativeContent"
+    ]
+
+}
