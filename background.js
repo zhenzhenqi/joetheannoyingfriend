@@ -29,6 +29,6 @@ chrome.pageAction.onClicked.addListener(function(tab) {
   }
   else{
     chrome.pageAction.setIcon({path: "off.png", tabId:tab.id});
-    chrome.tabs.executeScript(tab.id, {code:"alert()"});
+    chrome.tabs.executeScript(tab.id, {code:"alert('turned off')"});
   }
-});   
+});

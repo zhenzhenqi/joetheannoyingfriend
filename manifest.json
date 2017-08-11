@@ -22,14 +22,15 @@
     "default_title": "icon"
     // "default_popup": "popup.html"
   },
-  
+
 "icons": {
    "19": "on.png",
    "19": "off.png"
  },
 
   "permissions" : [
-    "declarativeContent"
+    "declarativeContent",
+    "activeTab"
     ]
 
 }
